@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar navbar-fixed-top p-3">
+            <button class="navbar-toggler" type="button">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-text">
+                Ecommerce
+            </div>
+            <div class="header-icon">
+                <!-- <a href="#"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <title>Wishlist</title>
+                    <defs>
+                        <path id="a"
+                            d="M12.105 18.56c4.765-4.33 6.26-5.87 7.235-7.685.45-.837.66-1.6.66-2.375C20 6.525 18.475 5 16.5 5a3.989 3.989 0 0 0-2.977 1.387L12 8.175l-1.523-1.788A3.989 3.989 0 0 0 7.5 5C5.525 5 4 6.525 4 8.5c0 .778.212 1.544.666 2.386.979 1.813 2.483 3.36 7.23 7.665l.11.099.099-.09zM10.58 3.88L12 5.09l1.42-1.209A5.93 5.93 0 0 1 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3a5.93 5.93 0 0 1 3.08.881z">
+                        </path>
+                    </defs>
+                    <use fill="#000" fill-rule="nonzero" stroke="#FFF" stroke-width=".8" xlink:href="#a"></use>
+                </svg>
+                <!-- </a> -->
+                <!-- <a href="#"> -->
+                <!-- cart icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title"
+                    width="24" height="24">
+                    <title>My Cart</title>
+                    <g fill="none" fill-rule="evenodd">
+                        <path stroke="#000" stroke-width="1.2" d="M23 5.052l-2.456 8.41H10.406L7.95 5.052 1 5"></path>
+                        <path fill="#000"
+                            d="M10.308 18.346c0 .85.65 1.5 1.5 1.5s1.5-.65 1.5-1.5-.65-1.5-1.5-1.5-1.5.65-1.5 1.5M18.177 18.346c0 .85.65 1.5 1.5 1.5s1.5-.65 1.5-1.5-.65-1.5-1.5-1.5-1.5.65-1.5 1.5">
+                        </path>
+                    </g>
+                </svg>
+                <!-- </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="blocker"></div>
+    <div class="menu">
+        <div class="menu-header">
+            <span>Hello!</span>
+            <button class="login">Login/Register</button>
+        </div>
+        <div class="menu-list">
+            <li>
+                <a>Home</a>
+            </li>
+            <hr class="menu-border" />
+            <li>
+                <a>Contact</a>
+            </li>
+            <hr class="menu-border" />
+            <li>
+                <a>About</a>
+            </li>
+            <hr class="menu-border" />
+            <li>
+                <a>Services</a>
+            </li>
+            <hr class="menu-border" />
+        </div>
+    </div>
+    <!-- search bar -->
+    <form action="" autocomplete="off" class="form-horizontal m-3 p-2" method="post" accept-charset="utf-8">
+        <div class="input-group flex center">
+            <input name="searchtext" value="" style="width: 300px;" class="p-1" type="text" placeholder="Search"
+                aria-placeholder="Search">
+            <span class="input-group-btn">
+                <button type="button" class="" type="submit" id="addressSearch">
+                    <i class="fas fa-search"></i> 
+                </button>
+            </span>
+        </div>
+    </form>
+
+    <!--carousel start-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item item peopleCarouselImg active" data-bs-interval="10000">
+                <img src="https://co-well.vn/wp-content/uploads/2019/12/why-ecommerce-is-important-with-business.png"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item item peopleCarouselImg" data-bs-interval="2000">
+                <img src="https://blog.pluga.co/uploads/2018/09/criar-e-commerce.png"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item item peopleCarouselImg">
+                <img src="https://ied.eu/wp-content/uploads/2018/06/e-commerce.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span><i class="fas fa-arrow-left prev"></i>
+                <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span><i class="fas fa-arrow-right next"></i>
+                <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--carousel end-->
+
+    <!-- for small devices -->
+    <div class="main-body-small-header w-100 flex center flex-col d-lg-none">
+        <div class="upper-header w-100 flex center start p-4">Start Exploring</div>
+        <div class="main-body-small-header-box">
+            <span>Explore</span>
+        </div>
+        <div class="products-cat-demo sm h-100">
+            <ul class="explore flex center h-100">
+                <li>
+                    <img class="imgfullwidth unhover"
+                        src="https://www.godrejinterio.com/imagestore/images/godrejInterio/LivingRoom.svg" alt="LivingRoom">
+                        <span>Living Room </span>
+                </li>
+                <li>
+                    <img class="imgfullwidth unhover"
+                        src="https://www.godrejinterio.com/imagestore/images/godrejInterio/BedRoom.svg" alt="BedRoom">
+                        <span>Bed Room </span>
+                </li>
+                <li>
+        
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- for medium and large devices -->
+    <div class="main-body-header w-100 flex d-none d-lg-flex">
+        <div class="main-body-header-box flex end center">
+            <span>Hello Guest</span>
+        </div>
+        <div class="main-body-header-content">
+            <div class="products-cat-demo h-100">
+                <ul class="explore flex center h-100">
+                    <li>
+                        <img class="imgfullwidth unhover" src="https://www.godrejinterio.com/imagestore/images/godrejInterio/LivingRoom.svg"
+                            alt="LivingRoom">
+                            <span>Living Room </span>
+                    </li>
+                    <li>
+                        <img class="imgfullwidth unhover" src="https://www.godrejinterio.com/imagestore/images/godrejInterio/BedRoom.svg"
+                            alt="BedRoom">
+                            <span>Bed Room </span>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+</body>
+
+</html>

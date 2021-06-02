@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: CeraGIBold,sans-serif;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+/* use this flex-center class if needed to align center*/
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.flex{
+    display: flex;
+}
+.center{
+    place-content: center;
+    place-items: center;
+}
+.start{
+    place-content: flex-start;
+}
+.end{
+    place-content: flex-end;
+}
+.around{
+    place-content: space-around;
+}
+.between{
+    place-content: space-between;
+}
+.flex-col{
+    flex-direction: column;
+}
+.menu {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    transition: .2s linear;
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid rgba(0, 0, 0, 0.331);
+    z-index: 1000;
+}
+.fa-bars{
+    font-size: 25px;
+}
+/* when using CSS */
+
+/* .navbar-css{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} */
+/* .header-text{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+/* .header-icon{
+    justify-self: flex-end;
+    align-self: flex-end;
+}  */
+
+.header-icon svg{
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.menu.show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    /* padding:10px 30px; */
+}
+
+.blocker {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.276);
+}
+
+.blocker.show_blocker {
+    z-index: 1000;
+    display: block;
+}
+
+.menu-header {
+    background-color: #026dc6;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.menu-header span {
+    color: #fff;
+    font-size: 16px;
+    margin: 25px 16px;
+    font-family: CeraGILight,sans-serif;
+    font-weight: normal;
+}
+
+.menu-header .login {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 7px 9px;
+    font-size: 14px;
+    margin: 0px 20px 0px 30px;
+
+}
+
+.menu-list {
+    list-style-type: none;
+    list-style-position: outside;
+    position: relative;
+    left: 0; 
+}
+
+.menu-list li {
+    margin: 6px 25px;
+    /* border-bottom: 2px solid black; */
+    padding: 1px 10px;
+}
+hr.menu-border{
+    border: .4px solid rgba(0, 0, 0, 0.262);
+}
+
+.input-group input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.49);
+    padding:0 10px;
+    outline:  none;
+}
+.input-group input:focus{
+    border-bottom: 1.5px solid #036cc5;
+}
+
+.input-group-btn button{
+    width: 35px;
+    height: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    border: none;
+    background-color: #036cc5;
+    color: white;
+}
+
+/* carousel */
+.carousel {
+    margin: 20px auto;
+}
+
+.peopleCarouselImg img {
+    width: 100px;
+    height: 250px;
+    padding: 10px;
+}
+
+@media only screen and (min-width:856px) {
+
+    .peopleCarouselImg img {
+        width: 100px;
+        height: 300px;
+    }
+
+}
+
+.prev,
+.next {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.main-body-small-header {
+    color: black;
+    font-size: 20px;
+}
+.main-body-small-header-box{
+    margin: 20px 0;
+}
+.main-body-small-header-box span{
+    font-size: 25px;
+}
+
+.upper-header{
+    height: 50px;
+    background: #036cc5;
+    color: white;
+}
+
+.main-body-header{
+    height: 200px;
+    background: rgb(255, 255, 255);
+    border-top: 1.3px solid rgba(0, 0, 0, 0.4);   
+    border-bottom: 1.3px solid rgba(0, 0, 0, 0.4);    
+    color: #ffffff;
+}
+.main-body-header-box{
+    width: 250px;
+    height: 100%;
+    background-color: #036cc5;
+}
+.main-body-header-box span{
+    margin-right:40px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.products-cat-demo.sm{
+    margin: 20px 0;
+}
+.explore{
+    padding: 10px;
+}
+.explore li{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.explore li img{
+    width: fit-content;
+    margin: 20px;
+}.explore li span{
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+    color: black;
+}
