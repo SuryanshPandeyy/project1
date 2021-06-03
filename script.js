@@ -1,4 +1,4 @@
-$(".navbar-toggler").on("click", () => {
+$(".navbar-toggler-without-border").on("click", () => {
     $(".menu").addClass('show');
     $(".blocker").addClass('show_blocker');
 });
